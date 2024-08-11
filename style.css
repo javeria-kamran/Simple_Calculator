@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    margin: 0;
+}
+
+.container {
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 320px;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: #4a4a4a;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#display {
+    width: 100%;
+    background-color: #4a4a4a;
+    color: #ffffff;
+    border: none;
+    padding: 20px;
+    font-size: 32px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    background-color: #ffa500; /* Orange color */
+    border: none;
+    font-size: 24px;
+    padding: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    background-color: #cc8400; /* Darker orange when pressed */
+}
+
+button.number, button.operator {
+    background-color: #4a4a4a; /* Dark grey color for number and operator buttons */
+    color: #ffffff; /* White color for the text on buttons */
+}
+
+button:active.number, button:active.operator {
+    background-color: #6c6c6c; /* Slightly lighter grey when pressed */
+}
+
+button.clear {
+    background-color: #ffa500; /* Orange for the clear button */
+    color: #ffffff; /* White text */
+}
+
+button.equal {
+    background-color: #ffa500; /* Orange for the equal button */
+    color: #ffffff; /* White text */
+    grid-column: span 2;
+}
+
+button:active.clear, button:active.equal {
+    background-color: #cc8400; /* Darker orange when pressed */
+}
